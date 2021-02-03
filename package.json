@@ -1,7 +1,6 @@
 {
   "name": "final",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,5 +12,14 @@
   "devDependencies": {
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bann91/birreal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bann91/birreal/issues"
+  },
+  "homepage": "https://github.com/bann91/birreal#readme",
+  "description": ""
 }

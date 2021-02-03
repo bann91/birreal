@@ -1,0 +1,25 @@
+:root {
+  font-size: 12px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 2rem;
+  background-color: white;
+  font-family: 'Quicksand', sans-serif; }
+  body a {
+    text-decoration: none; }
+  body h1, body h2, body h3 {
+    color: #0c8dad; }
+  body header img {
+    width: 50%; }
+  body footer h2 {
+    color: #0e1d2f;
+    font-size: 1rem;
+    display: inline; }
+  body footer .logoFooter {
+    width: 10%; }
+  body footer img {
+    width: 5%; }
