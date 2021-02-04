@@ -7,19 +7,64 @@
 
 body {
   font-size: 2rem;
-  background-color: white;
   font-family: 'Quicksand', sans-serif; }
   body a {
     text-decoration: none; }
   body h1, body h2, body h3 {
-    color: #0c8dad; }
+    color: #0c8dad;
+    margin: 0.5rem; }
+  body header a img {
+    width: 8%; }
   body header img {
-    width: 50%; }
-  body footer h2 {
-    color: #0e1d2f;
-    font-size: 1rem;
-    display: inline; }
-  body footer .logoFooter {
-    width: 10%; }
-  body footer img {
-    width: 5%; }
+    width: 20%; }
+  body header video {
+    width: 100%;
+    opacity: 50%; }
+  body header p {
+    font-size: 8rem;
+    color: #e1edf1; }
+  body main h2 {
+    margin: 1.5rem; }
+  body main h3 {
+    font-size: 6rem; }
+  body section {
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    margin: 1rem; }
+    body section header {
+      color: #0c8dad;
+      font-weight: 600;
+      font-size: 3rem; }
+      body section header p {
+        color: #0c8dad;
+        opacity: 40%;
+        font-size: 6rem; }
+    body section p {
+      color: #0e1d2f;
+      font-size: 1.5rem; }
+    body section form {
+      margin: 0.5rem; }
+    body section img {
+      width: 40%;
+      margin: 00.5rem; }
+  body footer {
+    background-color: #e1edf1; }
+    body footer h2 {
+      padding: 1rem;
+      color: #0e1d2f;
+      font-size: 1.5rem; }
+    body footer .logoFooter {
+      margin: 1rem;
+      width: 8%; }
+    body footer img {
+      margin: 1rem;
+      width: 5%; }
+  body .arriba {
+    rotate: 180deg; }
+  body .tamanio_boton {
+    width: 8%; }
+  body .boton_volver {
+    width: 12%;
+    margin: 1rem; }
+  body .tamanio_boton_formulario {
+    font-size: 1rem; }
