@@ -13,29 +13,42 @@
 		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,600;0,700;1,500;1,600&display=swap" rel="stylesheet"> 
 	</head>
-    <body> <!--degradé de fondo-->
+    <body>
 		<header>
-			<a href="index.html"><img src="img/logomini.png" alt="logo birreal"></a> <!--sticky-->
+			<a href="index.html"><img src="img/mariposa.png" alt="logo birreal" class="boton_volver"></a>
 		</header>
-		<section>
+		<section id="loveIsInTheAir">
 			<header>
-				<p>love is in the air</p><!--baja opacidad, letras enormes-->
+				<p>love is in the air</p>
 			</header>
-			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<p>Festejemos el amor! Estamos junto a vos desde la entrevista hasta el final de tu fiesta.</p>
+			<div id="carouselExampleIndicators" class="carousel slide ancho_cien" data-ride="carousel">
 				<ol class="carousel-indicators">
 				  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 				  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 				  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+				  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+				  <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
 				</ol>
 				<div class="carousel-inner">
 				  <div class="carousel-item active">
-					<img src="..." class="d-block w-100" alt="...">
+					<img src="img/bodas/01.jpg" class="d-block w-100" alt="niños llevan anillos">
 				  </div>
 				  <div class="carousel-item">
-					<img src="..." class="d-block w-100" alt="...">
+					<img src="img/bodas/02.jpg" class="d-block w-100" alt="pareja besándose">
 				  </div>
 				  <div class="carousel-item">
-					<img src="..." class="d-block w-100" alt="...">
+					<img src="img/bodas/03.jpg" class="d-block w-100" alt="pareja recién casada">
+				  </div>
+				  <div class="carousel-item">
+					<img src="img/bodas/04.jpg" class="d-block w-100" alt="reciben novia en el altar">
+				  </div>
+				  <div class="carousel-item">
+					<img src="img/bodas/05.jpg" class="d-block w-100" alt="pareja">
+				  </div>
+				  <div class="carousel-item">
+					<img src="img/bodas/06.jpg" class="d-block w-100" alt="recién casados">
 				  </div>
 				</div>
 				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -46,41 +59,40 @@
 				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
 				  <span class="sr-only">Next</span>
 				</a>
-			  </div>
-			  <a href=""><img src="img/buttom.png" alt="boton hacia abajo" class="buttom"></a>
+			</div>
+			<p>En nuestras redes vas a encontrar mucho más material para ver. Podés encontrarnos en <a href="https://www.instagram.com/birreal/">instagram</a> y <a href="https://www.facebook.com/BirrealLP/">facebook</a>!</p>
+			<a href="#nosotrosBodas"><img src="img/buttom.png" alt="boton hacia abajo" class="tamanio_boton"></a>
 		</section>
-		<section>
-			<a href=""><img src="img/buttom.png" alt="boton hacia arriba" class="buttom arriba"></a>
+		<section id="nosotrosBodas">
+			<a href="#loveIsInTheAir"><img src="img/buttom.png" alt="boton hacia arriba" class="tamanio_boton arriba"></a>
 			<header>Nosotros</header>
-			<img src="" alt="foto equipo">
-			<img src="" alt="foto equipo">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non mollitia sit</p>
-			<img src="" alt="fotos backstage">
-			<img src="" alt="foto canon">
-			<a href=""><img src="img/buttom.png" alt="boton hacia abajo" class="buttom"></a>
+			<img src="img/equipo08.jpg" alt="fotógrafa">
+			<p>Hola, mi nombre es Bárbara. Junto a mis compañeros Mauro y Facundo nos encargamos de cubrir los exteriores, ceremonias religiosas o en el registro civil y la fiesta. Dejamos que todo fluya para tener las mejores tomas espontáneas sin dejar de lado la prolijidad. Conocé nuestro trabajo!</p>
+			<img src="img/equipo01.jpg" alt="equipo de trabajo" class="equipo"><img src="img/equipo02.jpg" alt="equipo de trabajo" class="equipo"><img src="img/equipo03.jpg" alt="equipo de trabajo" class="equipo">
+			<a href="#contactoBoda"><img src="img/buttom.png" alt="boton hacia abajo" class="tamanio_boton"></a>
 		</section>
-		<section>
-			<a href=""><img src="img/buttom.png" alt="boton hacia arriba" class="buttom arriba"></a>
-			<p>Hablemos!</p>
+		<section id="contactoBoda">
+			<a href="#nosotrosBodas"><img src="img/buttom.png" alt="boton hacia arriba" class="tamanio_boton arriba"></a>
+			<header>Hablemos!</header>
 			<form>
 				<p>Nombre <input type="text" name="nombre"></p>
 				<p>Mail <input type="email" name="mail" placeholder="ejemplo@mail.com"></p>
 				<p>Fecha de tu boda <input type="date" name="fecha"></p>
 				<p>Dejá tu consulta<br> <textarea name="text" rows="4" cols="20"></textarea></p>	
-  				<p>
-    				<input type="submit" value="Enviar">
-   					<input type="reset" value="Borrar">
+  				<p class="tamanio_boton_formulario">
+    				<input class="achico_boton" type="submit" value="Enviar">
+   					<input class="achico_boton" type="reset" value="Borrar">
  				</p>
 			</form>
 		</section>
 		<hr>
 		<footer>
-			<img class="logoFooter" src="img/logomini.png" alt="logo birreal"> <!--logo mini-->
-			<h2>Birreal</h2>
-			<a href="https://wa.me/+542214365213"><img src="img/redes03.png" alt="logo whatsapp"></a>
-			<a href="https://www.instagram.com/birreal/"><img src="img/redes02.png" alt="logo instagram"></a>
-			<a href="https://www.facebook.com/BirrealLP/"><img src="img/redes01.png" alt="logo facebook"></a>
-			<h2>La Plata, Buenos Aires, Argentina</h2>
+			<a id="logoFooter" href="index.html"><img class="logoFooter" src="img/logomini.png" alt="logo birreal" ></a>
+			<h2 id="textoFooter">Birreal</h2>
+			<a id="whatsappFooter" href="https://wa.me/+542214265213"><img src="img/redes03.png" alt="logo whatsapp"></a>
+			<a id="instagramFooter" href="https://www.instagram.com/birreal/"><img src="img/redes02.png" alt="logo instagram"></a>
+			<a id="facebookFooter" href="https://www.facebook.com/BirrealLP/"><img src="img/redes01.png" alt="logo facebook"></a>
+			<h3 id="ciudadFooter">La Plata, Buenos Aires, Argentina</h3>
 		</footer>
 	</body>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

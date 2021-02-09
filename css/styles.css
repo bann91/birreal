@@ -22,10 +22,10 @@ body {
       left: 27%;
       z-index: 3; }
     body header a img {
-      width: 9%;
+      width: 7%;
       position: fixed;
       top: 1%;
-      left: 1%; }
+      left: 0%; }
     body header img {
       width: 30%;
       position: absolute;
@@ -63,7 +63,7 @@ body {
       body section header p {
         color: #0c8dad;
         opacity: 40%;
-        font-size: 6rem; }
+        font-size: 5rem; }
     body section p {
       color: #0e1d2f;
       font-size: 1.5rem; }
@@ -80,6 +80,8 @@ body {
       margin: 00.5rem; }
     body section .ancho_cien {
       width: 100%; }
+    body section .equipo {
+      width: 25%; }
   body footer {
     width: 100%;
     min-height: 100px;
@@ -124,7 +126,8 @@ body {
   body .arriba {
     rotate: 180deg; }
   body .tamanio_boton {
-    width: 8%; }
+    width: 8%;
+    display: block; }
   body .posicion_boton {
     width: 8%;
     position: absolute;
