@@ -52,8 +52,6 @@ body {
     main {
         a img {
             margin: 1rem;
-            position: relative;
-            left: 42%;
         }
         h2 {
             margin: 2rem;
@@ -166,7 +164,10 @@ body {
     .tamanio_boton {
         width: 8%;
         display: block;
+        position: relative;
+        margin: auto;
     }
+
     .posicion_boton {
         width: 8%;
         position: absolute;
@@ -176,5 +177,29 @@ body {
     }
     .tamanio_boton_formulario {
         font-size: 1rem;
+    }
+}
+
+
+
+
+/*animaciones*/
+
+body {
+    header {
+        a {
+            & :hover {
+                transform: scale(1.2);
+            }
+        }
+        
+    }
+}
+
+/*media queries*/
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .mov {
+        display: none;
     }
 }
