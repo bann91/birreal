@@ -7,6 +7,10 @@
    padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 2rem;
     font-family: 'Quicksand', sans-serif;
@@ -41,24 +45,9 @@ body {
             color: #e1edf1;
         }
     }
-    .header_2 {
-        width: 5%;
-        position: fixed;
-        z-index: 2;
-        right: 4%;
-        top: 2%;
-        a {
-            img {
-                width: 100%;
-            }
-        }
-    }
     main {
         position: relative;
         z-index: 2;
-        a img {
-            margin: 1rem;
-            margin-left: 48%;
         }
         h2 {
             margin: 2rem;
@@ -135,7 +124,7 @@ body {
             margin-right: auto;
         }
     }
-    footer {
+    .footer {
         width: 100%;
         position: absolute;
         z-index: 1;
@@ -156,6 +145,7 @@ body {
         h3 {
             color: #0e1d2f;
             font-size: 1rem;
+            margin: 0%;
         }
         .logoFooter {
             width: 40px;
@@ -197,14 +187,43 @@ body {
     .tamanio_boton_formulario {
         font-size: 1rem;
     }
-}
+
 @media (orientation: landscape) {
     body {    
+        .header_2 {
+            width: 5%;
+            position: fixed;
+            display: inline-block;
+            z-index: 2;
+            right: 4%;
+            top: 2%;
+            .solo_movil {
+                display: none;
+            }
+            a {
+                img {
+                    width: 100%;
+                }
+            }
+            .menu_desplegable {
+                display: none;
+                position: absolute;
+                p {
+                    font-size: 2rem;
+                    font-family: 'Quicksand', sans-serif;
+                    margin-top: 1%;
+                    margin-bottom: 0%;
+                    margin-right: 0%;
+                    color: #0c8dad;
+                }
+            }
+        }
         video {
             position: fixed;
             left: 0;
             top: 0;
-            width: 102%;
+            height: auto;
+            min-width: 100%;
             opacity: 20%;
             z-index: 0;
         }
@@ -243,21 +262,30 @@ body {
             position: fixed;
             left: 0;
             top: 0;
-            height: 100%;
+            min-width: 100%;
+            min-height: 100%;
             opacity: 20%;
         }
         .web {
             display: none;
         }
         .header_2 {
-            width: 10%;
-            position: fixed;
-            z-index: 2;
-            right: 4%;
-            top: 2%;
+            display: inline;
+            position: static;
+            .menu_desplegable {
+                display: none;
+            }
+            .solo_movil {
+                display: inline;
+            }
             a {
+                padding: 1rem;
+                p {
+                display: inline;
+                color: #0e1d2f;
+                }
                 img {
-                    width: 100%;
+                    width: 8%;
                 }
             }
         }
@@ -316,9 +344,15 @@ body {
     header {
         a {
             & :hover {
-                transform: scale(1.2);
+                
             }
         }
         
+    }
+    .boton_volver:hover {
+        transform: scale(1.2);
+    }
+    .header_2:hover .menu_desplegable {
+        display: block;
     }
 }
