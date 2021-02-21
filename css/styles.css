@@ -250,9 +250,35 @@ section {
     display: inline;
     width: 27%; } }
 
-/*animaciones*/
-body .boton_volver:hover {
+/*animaciones y transformaciones*/
+.escala:hover {
   transform: scale(1.2); }
 
-body .header_2:hover .menu_desplegable {
+.header_2:hover .menu_desplegable {
   display: block; }
+
+.desliza {
+  animation-name: desliza;
+  animation-duration: 4s;
+  animation-timing-function: unset;
+  animation-iteration-count: 1; }
+
+@keyframes desliza {
+  0% {
+    transform: translateX(-50%); }
+  100% {
+    transform: translateX(0%); } }
+
+.atencion {
+  animation-name: atencion;
+  animation-duration: 1s;
+  animation-timing-function: unset;
+  animation-iteration-count: infinite; }
+
+@keyframes atencion {
+  0% {
+    transform: translateY(0%);
+    opacity: 20%; }
+  100% {
+    transform: translateY(30%);
+    opacity: 100%; } }
