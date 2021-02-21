@@ -293,7 +293,7 @@ section {
     opacity: 100%; } }
 
 .atencion-mariposa {
-  animation-name: atencion_mariposa;
+  animation-name: atencion-mariposa;
   animation-duration: 1.5s;
   animation-direction: alternate-reverse;
   animation-timing-function: unset;
