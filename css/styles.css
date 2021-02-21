@@ -16,21 +16,21 @@ body {
   body h1, body h2, body h3 {
     color: #0c8dad;
     margin: 0.5rem; }
-  body .header_1 {
+  body .header-1 {
     position: relative;
     z-index: 1;
     margin-top: 18%;
     margin-bottom: 18%; }
-    body .header_1 h1 {
+    body .header-1 h1 {
       text-align: center; }
-    body .header_1 img {
+    body .header-1 img {
       top: 15%;
       display: block;
       margin: auto;
       width: 7%; }
-    body .header_1 a img {
+    body .header-1 a img {
       width: 3%; }
-    body .header_1 p {
+    body .header-1 p {
       font-size: 8rem;
       color: #e1edf1; }
   body main {
@@ -61,7 +61,8 @@ section {
   section header {
     color: #0c8dad;
     font-weight: 600;
-    font-size: 4rem; }
+    font-size: 4rem;
+    margin-top: 6rem; }
     section header p {
       color: #0c8dad;
       opacity: 40%;
@@ -85,12 +86,12 @@ section {
     section form input, section form textarea {
       width: 100%;
       border: 1px solid #d7e9ef; }
-    section form .achico_boton {
+    section form .achico-boton {
       width: 25%; }
   section img {
     width: 30%;
     margin: 0.5rem; }
-  section .ancho_cien {
+  section .ancho-cien {
     width: 70%;
     margin-left: auto;
     margin-right: auto; }
@@ -114,7 +115,7 @@ section {
     color: #0e1d2f;
     font-size: 1rem;
     margin: 0%; }
-  .footer .logoFooter {
+  .footer .logo-footer {
     width: 40px; }
   .footer img {
     width: 25px; }
@@ -143,25 +144,25 @@ section {
 .arriba {
   rotate: 180deg; }
 
-.tamanio_boton_formulario {
+.tamanio-boton-formulario {
   font-size: 1rem; }
 
 @media (orientation: landscape) {
-  body .header_2 {
-    width: 5%;
+  body .header-2 {
+    width: 8%;
     position: fixed;
     display: inline-block;
     z-index: 2;
-    right: 4%;
+    right: 2%;
     top: 2%; }
-    body .header_2 .solo_movil {
+    body .header-2 nav {
       display: none; }
-    body .header_2 a img {
+    body .header-2 a img {
       width: 100%; }
-    body .header_2 .menu_desplegable {
+    body .header-2 .menu-desplegable {
       display: none;
       position: absolute; }
-      body .header_2 .menu_desplegable p {
+      body .header-2 .menu-desplegable p {
         font-size: 2rem;
         font-family: 'Quicksand', sans-serif;
         margin-top: 1%;
@@ -182,19 +183,19 @@ section {
     display: none; } }
 
 @media (orientation: portrait) {
-  body .header_1 {
+  body .header-1 {
     position: relative;
     z-index: 1;
     margin-top: 60%;
     margin-bottom: 60%; }
-    body .header_1 h1 {
+    body .header-1 h1 {
       text-align: center; }
-    body .header_1 img {
+    body .header-1 img {
       top: 15%;
       display: block;
       margin: auto;
       width: 20%; }
-    body .header_1 a img {
+    body .header-1 a img {
       width: 8%; }
   body video {
     position: fixed;
@@ -205,27 +206,38 @@ section {
     opacity: 20%; }
   body .web {
     display: none; }
-  body .header_2 {
-    display: inline;
-    position: static; }
-    body .header_2 .menu_desplegable {
+  body .header-2 {
+    background-color: #e3eef1;
+    padding: 1rem; }
+    body .header-2 div {
       display: none; }
-    body .header_2 .solo_movil {
-      display: inline; }
-    body .header_2 a {
-      padding: 1rem; }
-      body .header_2 a p {
-        display: inline;
-        color: #0e1d2f; }
-      body .header_2 a img {
-        width: 8%; }
-  body main h3 {
-    font-size: 5rem;
-    text-align: left; }
-  body main div {
-    width: 90%; }
+    body .header-2 nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%; }
+      body .header-2 nav a {
+        width: 15%; }
+        body .header-2 nav a p {
+          font-size: 1.5rem;
+          font-family: 'Quicksand', sans-serif;
+          color: #0c8dad; }
+        body .header-2 nav a img {
+          width: 80%; }
+  body main {
+    margin-top: 2rem;
+    margin-bottom: 3rem; }
+    body main h3 {
+      font-size: 5rem;
+      text-align: left; }
+    body main div {
+      width: 90%; }
   body section div {
     width: 90%; }
+  body section header {
+    margin-bottom: 3rem; }
   body section a img {
     width: 9%;
     position: relative;
@@ -238,11 +250,11 @@ section {
     body section form input, body section form textarea {
       width: 100%;
       border: 1px solid #d7e9ef; }
-    body section form .achico_boton {
+    body section form .achico-boton {
       width: 40%; }
   body section img {
     width: 75%; }
-  body section .ancho_cien {
+  body section .ancho-cien {
     width: 100%;
     margin-left: auto;
     margin-right: auto; }
@@ -254,7 +266,7 @@ section {
 .escala:hover {
   transform: scale(1.2); }
 
-.header_2:hover .menu_desplegable {
+.header_2:hover .menu-desplegable {
   display: block; }
 
 .desliza {
@@ -282,3 +294,21 @@ section {
   100% {
     transform: translateY(30%);
     opacity: 100%; } }
+
+.atencion-mariposa {
+  animation-name: atencion_mariposa;
+  animation-duration: 1.5s;
+  animation-direction: alternate-reverse;
+  animation-timing-function: unset;
+  animation-iteration-count: infinite; }
+
+@keyframes atencion-mariposa {
+  0% {
+    transform: translateY(0%);
+    filter: brightness(1.1); }
+  25% {
+    transform: translateY(2.5%);
+    filter: brightness(1); }
+  100% {
+    transform: translateY(10%);
+    filter: brightness(1); } }
