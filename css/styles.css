@@ -145,6 +145,8 @@ section {
   font-size: 1rem; }
 
 @media (orientation: landscape) {
+  body .header-2:hover .menu-desplegable {
+    display: block; }
   body .header-2 {
     width: 8%;
     position: fixed;
@@ -262,9 +264,6 @@ section {
 /*animaciones y transformaciones*/
 .escala:hover {
   transform: scale(1.2); }
-
-.header-2:hover .menu-desplegable {
-  display: block; }
 
 .desliza {
   animation-name: desliza;

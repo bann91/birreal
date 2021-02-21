@@ -187,7 +187,10 @@ body {
     }
 
 @media (orientation: landscape) {
-    body {    
+    body {   
+        .header-2:hover .menu-desplegable {
+            display: block;
+        } 
         .header-2 {
             width: 8%;
             position: fixed;
@@ -351,9 +354,6 @@ body {
 
 .escala:hover{
     transform: scale(1.2);
-}
-.header-2:hover .menu-desplegable {
-    display: block;
 }
 
 .desliza {
