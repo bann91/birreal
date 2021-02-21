@@ -141,9 +141,6 @@ section {
     grid-area: ciudadFooter;
     justify-self: center; }
 
-.arriba {
-  rotate: 180deg; }
-
 .tamanio-boton-formulario {
   font-size: 1rem; }
 
